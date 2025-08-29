@@ -36,7 +36,9 @@ const NoteCard = ({note, setNotes}) => {
           {formatDate(createdAt)} 
           </span>
           <div className="flex items-center gap-1">
-            <PenSquareIcon className="size-4" />
+            <Link to={`/edit/${_id}`} className="btn btn-ghost btn-xs">
+              <PenSquareIcon className="size-4" />
+            </Link>
             <button className="btn btn-ghost btn-xs text-error"
              onClick={(e) => handleDeleteNote(e,_id)}>
         

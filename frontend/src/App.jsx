@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router'
 import Home from './pages/Home'
 import CreateNote from './pages/CreateNote'
 import NotesNotFound from './components/NotesNotFound'
+import EditNote from './pages/EditNote'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/create-note" element={<CreateNote/>} />
+        <Route path="/edit/:id" element={<EditNote/>} />
         <Route path="*" element={<NotesNotFound/>} />
 
       </Routes>
